@@ -17,6 +17,7 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public StudentResponse createStudent(StudentRequest request) {
+        System.out.println("Document Upload..");
         Student student = Student.builder()
                 .name(request.getName())
                 .email(request.getEmail())
